@@ -1,0 +1,79 @@
+<?php 
+session_start();
+include 'conexao.php';
+include 'verificalog.php';
+
+
+
+$email = $_SESSION['email'];
+
+$sql = "select nome from user where email = '$email'";
+$query = mysqli_query($conexao, $sql);
+
+?>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Hey You!</title>
+
+	
+	<script src="https://kit.fontawesome.com/7ab4100f2c.js" crossorigin="anonymous"></script>
+	
+	
+	<link rel="stylesheet" href="style3.css?v=<?php echo time(); ?>">
+</head>
+<body>
+
+<div id="navbar">
+
+<div id="nav"> <b>Heyou</b> </div>
+
+		<div id="menu"> <i class="fas fa-ellipsis-h"></i>
+
+
+			<div id="cont" style="background-color: white; border-radius: 15px;"> <a href="index.html">Início</a> <a href="sobre.html"> Sobre nós</a> <a href="">Contato</a></div>
+
+
+		</div>
+
+</div>
+
+		<div id="log"> 
+
+			<div id="form">		
+		
+			<center> 
+			
+				<h2> Sobre nós</h2>
+				
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales diam in augue interdum, a facilisis velit faucibus. Nullam tempus augue in sem faucibus congue. Morbi gravida lacus dapibus fringilla ullamcorper. Sed pellentesque interdum erat sit amet consectetur. Proin consectetur rutrum risus, vitae pellentesque risus viverra vel. Curabitur ac pulvinar orci. Donec dapibus tristique ligula, sed eleifend velit interdum vitae. Pellentesque luctus finibus nisi ut fringilla. Vivamus lacinia blandit velit a viverra. Sed dapibus congue rutrum. Quisque ac sodales nunc. Mauris vestibulum enim eget euismod tristique. Nam vel imperdiet enim, at euismod justo. Etiam in elit fermentum, suscipit risus ac, aliquam nunc. Quisque commodo massa quis pulvinar mattis.
+
+Duis lobortis dui rutrum, consequat arcu id, dignissim enim.</p> 
+
+
+	<p>Ut fringilla sapien risus, ut pellentesque nisi cursus vel. Maecenas eu metus ipsum. Nunc rutrum pharetra turpis. Sed viverra bibendum finibus. Fusce vestibulum porta imperdiet. Sed eget metus ac nisi placerat aliquet sit amet nec nibh. Curabitur molestie purus magna, nec egestas sapien vulputate quis. Phasellus sit amet ex ipsum. Proin lobortis, leo a hendrerit tincidunt, elit turpis accumsan massa, ac porttitor leo lectus sit amet felis. Praesent sit amet blandit nisi, vitae congue mi. Vestibulum facilisis ante quis finibus mattis. Morbi non odio iaculis, facilisis metus at, consequat risus. Suspendisse ut eleifend dolor.
+
+    Maecenas luctus, nunc eu faucibus dignissim, felis libero vulputate sapien, ac mattis velit metus fermentum diam. Mauris placerat, justo id pellentesque tincidunt, nisi ligula hendrerit lacus, a mattis felis purus et ante. Sed ultrices pulvinar lacus et facilisis. Cras porta purus vitae lorem suscipit, eu interdum lorem faucibus.</p> 
+
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tincidunt lorem ac quam viverra gravida. Maecenas viverra nulla et elit convallis, et blandit velit interdum. Phasellus fermentum, libero eget fringilla bibendum, enim sem pharetra neque, at blandit mi augue finibus lectus. Vestibulum eros ipsum, elementum at feugiat ut, consequat sit amet diam. Pellentesque porta sollicitudin feugiat. </p>
+
+
+			
+			
+			 </center>
+				
+			</div>
+
+
+		 </div>
+
+
+</body>
+</html>
