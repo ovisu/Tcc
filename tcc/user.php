@@ -5,6 +5,7 @@ include 'verificalog.php';
 
 
 
+
 $email = $_SESSION['email'];
 
 $sql = "select nome from user where email = '$email'";
