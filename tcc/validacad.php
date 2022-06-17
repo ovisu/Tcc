@@ -23,4 +23,5 @@ if ($valida->validacad($nome, $nasc, $email, $senha)){
           .href='cad.html'</script>";
     
     
+    
 }
